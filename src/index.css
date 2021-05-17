@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Allan:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.main_wrapper {
+  background-image: url(./template/background.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_wrapper,
+a {
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
+.max_height {
+  min-height: 100vh;
+}
+.bg_black_50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.rounded_5 {
+  border-radius: 5px;
+}
+.default_list {
+  padding: 20px;
+  font-size: 18px;
+}
+.default_list li {
+  display: block;
+  margin: 10px 0;
+}
+.default_list li:before {
+  content: "-";
+  padding-right: 10px;
+}
+.clean_list li:before {
+  content: "" !important;
+}
+.title {
+  font-family: "Allan", sans-serif;
+  font-size: 5rem;
+}
+.sub_title {
+  font-size: 1.5rem;
+}
+.telegram:before {
+  padding: 15px;
+  content: "";
+  background-image: url(./template/telegram.svg);
+  background-size: 20px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.github:before {
+  padding: 15px;
+  content: "";
+  background-image: url(./template/github.svg);
+  background-size: 20px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.mail:before {
+  padding: 15px;
+  content: "";
+  background-image: url(./template/email.svg);
+  background-size: 20px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.content_block {
+  max-width: 1000px;
+  margin: auto;
 }
